@@ -25,11 +25,11 @@ spec:
             - name: PROVISIONER_NAME
               value: example.com/nfs
             - name: NFS_SERVER
-              value: 167.254.204.63
+              value: <NFS-Server-IP>
             - name: NFS_PATH
               value: /mnt/k8sMount
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 167.254.204.63
+            server: <NFS-Server-IP>
             path: /mnt/k8sMount
